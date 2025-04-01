@@ -2,9 +2,15 @@
 
 Welcome to my software engineering portfolio! I am looking for oppotunities in software engineering, currently located in the Chicago-land area.
 
-### Tech Stack
+## **🔧 Tech Stack**
+- **Languages:**
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 - ![JavaScript](https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-squarehite)
+- **Frameworks & Tools:**
+- ![ASP.NET](https://shields.io/badge/-Asp_Net_Core_6-blue)
+- ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white)
+
+- **Database:**
 - ![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
 ---
 
