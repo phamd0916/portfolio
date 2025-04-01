@@ -9,6 +9,7 @@ Welcome to my software engineering portfolio! I am looking for oppotunities in s
 - **Frameworks & Tools:**
 - ![ASP.NET](https://shields.io/badge/-Asp_Net_Core_6-blue)
 - ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white)
+---
 
 - **Database:**
 - ![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -17,16 +18,8 @@ Welcome to my software engineering portfolio! I am looking for oppotunities in s
 ## **👨‍💻 About Me**
 
 I'm a Software Engineer with a passion for solving complex problems and building innovative software solutions. I’m excited to contribute to tech advancements, particularly in supply chain optimization.
-
 ---
 
-## **🔧 Tech Stack**
-
-- **Languages:** Python, Java, C#, JavaScript, SQL
-- **Frameworks & Tools:** ASP.NET, Flask, Next.js, Revit API, Entity Framework Core
-- **Databases:** PostgreSQL, Microsoft SQL Server
-
----
 
 ## **📑 Featured Projects**
 
