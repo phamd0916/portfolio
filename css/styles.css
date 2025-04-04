@@ -11123,17 +11123,48 @@ html {
   margin-top: 30px;
 }
 
-.img-hobby {
-  width: 33.333%;
+.hobbies-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hobby-container {
+  position: relative;
+  width: 40%;
   height: auto;
-}
-
-.img-hobby:hover {
-  background-color: #888888;
-  /* want more of a fade that completely transform the background. also want text to appear */
-}
-
-.hobby-row {
+  display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.img-hobby {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.hobby-container:hover .img-hobby {
+  filter: brightness(50%);
+}
+
+.hobby-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+}
+
+.hobby-container:hover .hobby-desc {
+  opacity: 1;
 }
