@@ -10996,7 +10996,7 @@ html {
     font-size: 1.5rem;
   }
 }
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
   display: block;
@@ -11032,8 +11032,8 @@ html {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
-  }
-}
+  } */
+/* } */
 
 .footer {
   padding-top: 5rem;
@@ -11120,6 +11120,42 @@ html {
   font-size: 1.5rem;
   margin-top: 30px;
 }
+/* Container that holds image and text */
+.img-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 250px; /* Set the height of the container */
+  overflow: hidden; /* Prevents overflow from the image */
+}
+
+/* Image styling */
+.img-hobby {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image covers the container without distortion */
+  transition: filter 0.3s ease-in-out; /* Smooth transition for darkening effect */
+  border-radius: 0.5rem;
+}
+
+/* Darken image on hover */
+.img-container:hover .img-hobby {
+  filter: brightness(20%); /* Darkens the image on hover */
+}
+
+/* Text styling that appears on hover */
+.hobby-desc {
+  position: absolute;
+  top: 50%;
+  margin-top: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for the text */
+  text-align: center;
+}
 
 .hobbies-container {
   display: flex;
@@ -11139,30 +11175,66 @@ html {
   margin-bottom: 30px;
 }
 
-.img-hobby {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: filter 0.3s ease-in-out;
-  border-radius: 0.5rem;
-}
-
 .hobby-container:hover .img-hobby {
   filter: brightness(50%);
 }
 
-.hobby-desc {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  text-align: center;
-}
-
 .hobby-container:hover .hobby-desc {
   opacity: 1;
+}
+
+/* Show text when image is hovered */
+.img-container:hover .hobby-desc {
+  opacity: 1; /* Text becomes visible when image is hovered */
+}
+
+/* Remove modal caption icon when the image is hovered */
+.portfolio-item-caption-content {
+  opacity: 1; /* Keeps the caption visible by default */
+}
+
+/* Hide the icon when image is hovered */
+.img-container:hover .portfolio-item-caption-content {
+  opacity: 0; /* Hide the caption when image is hovered */
+}
+
+/* Styling for the portfolio item */
+.portfolio-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Modal caption - ensure it's only visible on hover */
+.portfolio .portfolio-item .portfolio-item-caption {
+  opacity: 0; /* Hide the caption by default */
+}
+
+.portfolio .portfolio-item:hover .portfolio-item-caption {
+  opacity: 1; /* Show the caption when the image is hovered */
+}
+
+.portfolio .portfolio-item .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+/* Modal close button styling */
+.portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
 }
