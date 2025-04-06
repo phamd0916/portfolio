@@ -15,7 +15,7 @@ Welcome to my software engineering portfolio! I am looking for oppotunities in s
 
 ## **👨‍💻 About Me**
 
-I'm a Software Engineer with a passion for solving complex problems and building innovative software solutions. I’m excited to contribute to tech advancements, particularly in supply chain optimization.
+I'm a recent college graduate with a passion for solving complex problems and building innovative software solutions. I’m excited to contribute to tech advancements, particularly in supply chain optimization.
 ---
 
 
