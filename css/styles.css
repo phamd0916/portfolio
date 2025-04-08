@@ -4514,8 +4514,8 @@ textarea.form-control-lg {
   --bs-pagination-focus-bg: #e9ecef;
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(26, 188, 156, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #1abc9c;
-  --bs-pagination-active-border-color: #1abc9c;
+  --bs-pagination-active-bg: #3B3B45;
+  --bs-pagination-active-border-color: #3B3B45;
   --bs-pagination-disabled-color: #6c757d;
   --bs-pagination-disabled-bg: #fff;
   --bs-pagination-disabled-border-color: #dee2e6;
@@ -4740,7 +4740,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: 0.5rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #1abc9c;
+  --bs-progress-bar-bg: #3B3B45;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -4797,8 +4797,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #1abc9c;
-  --bs-list-group-active-border-color: #1abc9c;
+  --bs-list-group-active-bg: #3B3B45;
+  --bs-list-group-active-border-color: #3B3B45;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -6696,7 +6696,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #1abc9c !important;
+  color: #3B3B45 !important;
 }
 .link-primary:hover, .link-primary:focus {
   color: #15967d !important;
@@ -8132,7 +8132,8 @@ textarea.form-control-lg {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  /* background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important; */
+  background-color: #1a252f;
 }
 
 .bg-success {
@@ -10832,6 +10833,7 @@ html {
 
 .page-section {
   padding: 6rem 0;
+  padding-bottom: 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -10907,13 +10909,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #446280;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #3B3B45;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10935,11 +10937,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #446280;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #446280;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -11107,7 +11109,7 @@ html {
 
 .cvBtn:hover {
   background-color: #888888;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .downloadIcon {
@@ -11120,30 +11122,27 @@ html {
   font-size: 1.5rem;
   margin-top: 30px;
 }
-/* Container that holds image and text */
+
 .img-container {
   position: relative;
   display: block;
   width: 100%;
-  height: 250px; /* Set the height of the container */
-  overflow: hidden; /* Prevents overflow from the image */
+  height: 250px;
+  overflow: hidden;
 }
 
-/* Image styling */
 .img-hobby {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures the image covers the container without distortion */
-  transition: filter 0.3s ease-in-out; /* Smooth transition for darkening effect */
+  object-fit: contain;
+  transition: filter 0.3s ease-in-out;
   border-radius: 0.5rem;
 }
 
-/* Darken image on hover */
 .img-container:hover .img-hobby {
-  filter: brightness(20%); /* Darkens the image on hover */
+  filter: brightness(20%);
 }
 
-/* Text styling that appears on hover */
 .hobby-desc {
   position: absolute;
   top: 50%;
@@ -11152,8 +11151,8 @@ html {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for the text */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   text-align: center;
 }
 
@@ -11183,22 +11182,18 @@ html {
   opacity: 1;
 }
 
-/* Show text when image is hovered */
 .img-container:hover .hobby-desc {
-  opacity: 1; /* Text becomes visible when image is hovered */
+  opacity: 1;
 }
 
-/* Remove modal caption icon when the image is hovered */
 .portfolio-item-caption-content {
-  opacity: 1; /* Keeps the caption visible by default */
+  opacity: 1;
 }
 
-/* Hide the icon when image is hovered */
 .img-container:hover .portfolio-item-caption-content {
-  opacity: 0; /* Hide the caption when image is hovered */
+  opacity: 0;
 }
 
-/* Styling for the portfolio item */
 .portfolio-item {
   position: relative;
   display: block;
@@ -11207,22 +11202,20 @@ html {
   overflow: hidden;
 }
 
-/* Modal caption - ensure it's only visible on hover */
 .portfolio .portfolio-item .portfolio-item-caption {
-  opacity: 0; /* Hide the caption by default */
+  opacity: 0;
 }
 
 .portfolio .portfolio-item:hover .portfolio-item-caption {
-  opacity: 1; /* Show the caption when the image is hovered */
+  opacity: 1;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
 
-/* Modal close button styling */
 .portfolio-modal .btn-close {
-  color: #1abc9c;
+  color: #3B3B45;
   font-size: 2rem;
   padding: 1rem;
 }
