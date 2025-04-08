@@ -15,12 +15,6 @@ Welcome to my software engineering portfolio! I am looking for oppotunities in s
 - ![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
 ---
 
-## **👨‍💻 About Me**
-
-I'm a recent college graduate with a passion for solving complex problems and building innovative software solutions. I’m excited to contribute to tech advancements, particularly in supply chain optimization.
----
-
-
 ## **📑 Featured Projects**
 
 ### **Ultimetrics**  
