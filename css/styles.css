@@ -11134,7 +11134,7 @@ html {
 .img-hobby {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   transition: filter 0.3s ease-in-out;
   border-radius: 0.5rem;
 }
