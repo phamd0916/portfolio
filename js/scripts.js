@@ -52,3 +52,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// let carousel = document.querySelector('.text-carousel');
+// let techTexts = document.querySelectorAll('.tech-text');
+// let index = 0;
+
+// function startCarousel() {
+//     setInterval(() => {
+//         index++;
+//         if (index >= techTexts.length) {
+//             index = 0;
+//         }
+//         carousel.style.transform = `translateY(-${index * 100}%)`; // Moves the container up
+//     }, 3000);
+// }
+
+// startCarousel();

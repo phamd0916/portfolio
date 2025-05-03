@@ -11235,10 +11235,37 @@ html {
 .bio-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .bio-image {
   height: 150px;
   width: 150px;
   padding-right: 10px;
+}
+
+.text-carousel {
+  display: flex;
+  width: 300px;
+  /* height: 50px; */
+  overflow: hidden;
+  position: relative;
+  animation: slide 15s linear infinite; /* Adjust the speed (15s) and type of animation */
+}
+
+.tech-text {
+  font-size: 18px;
+  white-space: nowrap;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
