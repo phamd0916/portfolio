@@ -11231,3 +11231,14 @@ html {
     line-height: 2.5rem;
   }
 }
+
+.bio-container {
+  display: flex;
+  align-items: center;
+}
+
+.bio-image {
+  height: 150px;
+  width: 150px;
+  padding-right: 10px;
+}
