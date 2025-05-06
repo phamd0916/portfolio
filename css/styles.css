@@ -11235,7 +11235,7 @@ html {
 .bio-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .bio-image {
@@ -11246,26 +11246,29 @@ html {
 
 .text-carousel {
   display: flex;
-  width: 300px;
-  /* height: 50px; */
+  width: 100%;
+  white-space: nowrap;
+  animation: slide 5s linear infinite;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  position: relative;
-  animation: slide 15s linear infinite; /* Adjust the speed (15s) and type of animation */
+  width: 100%;
 }
 
 .tech-text {
   font-size: 18px;
-  white-space: nowrap;
   margin: 0 20px;
-  display: inline-block;
 }
 
 
 @keyframes slide {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
