@@ -11244,20 +11244,22 @@ html {
   padding-right: 10px;
 }
 
-.text-carousel {
-  display: flex;
-  width: max-content;
-  white-space: nowrap;
-  animation: slide 5s linear infinite;
-}
-
 .carousel-wrapper {
   text-align: center;
   position: relative;
-  display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
+}
+
+.text-carousel {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+  animation: slide 5s linear infinite;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .tech-text {
