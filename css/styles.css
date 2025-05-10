@@ -11246,12 +11246,14 @@ html {
 
 .text-carousel {
   display: flex;
-  width: 100%;
+  width: max-content;
   white-space: nowrap;
   animation: slide 5s linear infinite;
 }
 
 .carousel-wrapper {
+  text-align: center;
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;

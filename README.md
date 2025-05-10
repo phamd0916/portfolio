@@ -1,6 +1,6 @@
 # **Douglas Pham - Software Engineer Portfolio**
 
-Welcome to my software engineering portfolio! I am looking for oppotunities in software engineering, currently located in the Chicago-land area.
+Welcome to my software engineering portfolio! I am currently working as a Full Stack Developer at the Hub Group corporate office in Oak Brook, IL!
 
 ## **🔧 Tech Stack**
 **Languages:**
