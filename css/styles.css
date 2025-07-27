@@ -11250,34 +11250,28 @@ html {
 }
 
 .carousel-wrapper {
-  text-align: center;
-  position: relative;
-  flex-direction: column;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .text-carousel {
   display: flex;
-  width: 100%;
-  white-space: nowrap;
-  animation: slide 5s linear infinite;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  width: max-content; /* Allow content to expand beyond container */
+  animation: slide 10s linear infinite;
 }
 
 .tech-text {
   font-size: 18px;
   margin: 0 20px;
+  white-space: nowrap;
 }
-
 
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(0); /* Move by half the width of the content */
   }
 }
