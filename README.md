@@ -33,6 +33,10 @@ Welcome to my software engineering portfolio! I am currently working as a Full S
 
 ## **💼 Experience**
 
+### **Software Engineer**
+*Hub Group*
+- Designed and implemented new features on software utilizing Node.js and SQL
+
 ### **Technical Support Intern**  
 *Movano Health*  
 - Resolved bugs and enhanced product stability, achieving over 90% user satisfaction.
